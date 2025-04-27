@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -56,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        lightText: "#4169E1",
+        darkText: "#FF5F5F",
+        linkLight: "rgba(65, 105, 225, 0.8)",
+        linkDark: "rgba(255, 95, 95, 0.8)",
       },
       keyframes: {
         "fade-in": {

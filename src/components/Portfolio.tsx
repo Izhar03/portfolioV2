@@ -1,5 +1,6 @@
 
 import { Instagram, Mail } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Portfolio = () => {
   const textLines = [
@@ -18,12 +19,13 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white p-8 md:p-16 flex flex-col justify-center">
+    <div className="min-h-screen transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16 flex flex-col justify-center">
+      <ThemeToggle />
       <div className="max-w-4xl">
         {textLines.map((line, index) => (
           <p
             key={index}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-white"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 dark:text-darkText text-lightText"
             style={{
               animation: `fade-in 0.5s ease-out forwards`,
               animationDelay: `${index * 0.1}s`,
@@ -42,11 +44,17 @@ const Portfolio = () => {
             opacity: "0"
           }}
         >
-          <a href="https://instagram.com" className="flex items-center gap-2 text-white hover:text-primary transition-colors">
+          <a 
+            href="https://instagram.com" 
+            className="flex items-center gap-2 dark:text-linkDark text-linkLight underline transition-all duration-300 hover:no-underline"
+          >
             <Instagram className="w-6 h-6" />
             <span className="text-xl">Instagram</span>
           </a>
-          <a href="mailto:contact@example.com" className="flex items-center gap-2 text-white hover:text-primary transition-colors">
+          <a 
+            href="mailto:contact@example.com" 
+            className="flex items-center gap-2 dark:text-linkDark text-linkLight underline transition-all duration-300 hover:no-underline"
+          >
             <Mail className="w-6 h-6" />
             <span className="text-xl">Email</span>
           </a>
