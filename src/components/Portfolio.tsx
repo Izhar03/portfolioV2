@@ -23,10 +23,11 @@ const Portfolio = () => {
         {textLines.map((line, index) => (
           <p
             key={index}
-            className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-2 opacity-0 text-primary`}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 text-white"
             style={{
               animation: `fade-in 0.5s ease-out forwards`,
               animationDelay: `${index * 0.1}s`,
+              opacity: "0"
             }}
           >
             {line || "\u00A0"}
@@ -34,10 +35,11 @@ const Portfolio = () => {
         ))}
         
         <div 
-          className="flex gap-6 mt-8 opacity-0"
+          className="flex gap-6 mt-8"
           style={{
             animation: `fade-in 0.5s ease-out forwards`,
             animationDelay: `${textLines.length * 0.1}s`,
+            opacity: "0"
           }}
         >
           <a href="https://instagram.com" className="flex items-center gap-2 text-white hover:text-primary transition-colors">
