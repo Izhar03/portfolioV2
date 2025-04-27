@@ -10,7 +10,7 @@ const ThemeToggle = () => {
           <p className="mr-2 text-lightText font-medium">Sorry for hurting your eyes</p>
           <Sun className="h-5 w-5 text-lightText cursor-pointer hover:opacity-80 transition-opacity" onClick={toggleTheme} />
         </div> : <div className="flex items-center">
-          <p className="mr-2 text-darkText font-medium">You like it that way, thanks :)</p>
+          <p className="mr-2 text-darkText font-medium">In love with royal blue or what ?</p>
           <Moon className="h-5 w-5 text-darkText cursor-pointer hover:opacity-80 transition-opacity" onClick={toggleTheme} />
         </div>}
     </div>;
