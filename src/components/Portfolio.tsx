@@ -2,7 +2,7 @@ import { Instagram, Linkedin, Mail } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 const Portfolio = () => {
   const textLines = ["Hello. I am Moosa. A Quantitative Finance and Risk", "Management Science student, photographer,", "content creator, and calisthenics athlete.", "", "My professional life includes business", "development consultancy, content production, and", "modeling.", "", "I also work with sound. I create music with a", "friend. We are called slouch.", "", "Connect me on LinkedIn", "", "Here's my instagram, and email."];
-  return <div className="min-h-screen transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16 flex flex-col items-center justify-center">
+  return <div className="min-h-screen transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16 flex flex-col">
       <ThemeToggle />
       <div className="max-w-4xl mt-16">
         {textLines.map((line, index) => <p key={index} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 dark:text-darkText text-lightText" style={{
