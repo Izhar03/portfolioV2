@@ -17,7 +17,7 @@ const Portfolio = () => {
         animation: `fade-in 0.5s ease-out forwards`,
         animationDelay: `${textLines.length * 0.1}s`,
         opacity: "0"
-      }} className="flex gap-6 mt-8 justfy center">
+      }} className="flex justify-center gap-6 mt-8">
           <a href="https://linkedin.com/in/your-profile" className="flex items-center gap-2 dark:text-linkDark text-linkLight underline transition-all duration-300 hover:no-underline">
             <Linkedin className="w-6 h-6" />
             <span className="text-xl">LinkedIn</span>
