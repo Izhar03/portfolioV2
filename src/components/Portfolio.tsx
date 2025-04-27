@@ -1,5 +1,5 @@
 
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Portfolio = () => {
@@ -15,13 +15,15 @@ const Portfolio = () => {
     "I also work with sound. I create music with a",
     "friend. We are called slouch.",
     "",
+    "Connect me on LinkedIn",
+    "",
     "Here's my instagram, and email."
   ];
 
   return (
-    <div className="min-h-screen transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16 flex flex-col justify-center">
+    <div className="min-h-screen transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16 flex flex-col">
       <ThemeToggle />
-      <div className="max-w-4xl">
+      <div className="max-w-4xl mt-16">
         {textLines.map((line, index) => (
           <p
             key={index}
@@ -44,6 +46,13 @@ const Portfolio = () => {
             opacity: "0"
           }}
         >
+          <a 
+            href="https://linkedin.com/in/your-profile" 
+            className="flex items-center gap-2 dark:text-linkDark text-linkLight underline transition-all duration-300 hover:no-underline"
+          >
+            <Linkedin className="w-6 h-6" />
+            <span className="text-xl">LinkedIn</span>
+          </a>
           <a 
             href="https://instagram.com" 
             className="flex items-center gap-2 dark:text-linkDark text-linkLight underline transition-all duration-300 hover:no-underline"
