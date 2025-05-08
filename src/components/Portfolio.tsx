@@ -3,18 +3,19 @@ import ThemeToggle from "./ThemeToggle";
 
 const Portfolio = () => {
   const textLines = [
-    "Hello. I am Izhar. A SWE jumping between del/hyd with a knack for fashion deconstruction and product obsession and interests lingering around art, literature and history.",
+    "Hello. I am Izhar — a SWE jumping between Del/Hyd with a knack for fashion deconstruction, product obsession, and interests lingering around art, literature, and history.",
     "",
-    "Computer Science student with minor in AI and unbounded love for operating systems,",
-    "Currently working as a SWE intern @Inncircles in thier AI team building for contruction space in India.",
+    "Computer Science student with a minor in AI and an unbounded love for operating systems.",
+    "Currently working as a SWE intern @Inncircles in their AI team, building for the construction space in India.",
     "",
-    "A typical day after 11-7 include reading rumi, venting about life to people I love being around",
-    "meanwhile learning some SwiftUI on weekends with some random gigs in hyderabad.",
+    "A typical day after 11 to 7 includes reading Rumi, venting about life to people I love being around,",
+    "while learning some SwiftUI on weekends with some random gigs in Hyderabad.",
     "",
-    "I do write , in free time do check for sure : MEDIUM ",
+    "I do write — in free time, do check for sure: MEDIUM.",
     "",
     "More active on Instagram :)"
   ];
+  
 
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300 dark:bg-black bg-white p-8 md:p-16">
